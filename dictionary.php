@@ -27,5 +27,31 @@
         "Sincere" => "Honest",
         "Vibes" => "Signals"
     );
+
+    if (isset($_POST['sbtn']))
+    {
+        $search = $_POST['txt'];
+        $found = 0;
+        $mn = "";
+    }
+
+    foreach($dict as $wrd => $mean)
+    {
+        if(strtoupper($wrd) == strtoupper($search))
+        {
+            $found = 1;
+            $mn = $mean;
+            break;
+        }
+    }
+    if ($found)
+    {
+        echo "<b>Meaning : </b>".$mn;
+    }
+    else
+    {
+        echo "Word Not found";
+    }
+    ?>
 </body>
 </html>
