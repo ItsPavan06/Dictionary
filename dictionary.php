@@ -12,5 +12,20 @@
         
         <input type="submit" name="sbtn" value="search">
     </form>
+    <br>
+
+    <?php
+    $dict = array(
+        "Accurate" => "Correct",
+        "Counsel" => "Advice",
+        "Defined" => "Protect",
+        "Garbage" => "Trash",
+        "Guilt" => "Regret",
+        "Hurry" => "Rush",
+        "Intend" => "Mean",
+        "Safe" => "Secure",
+        "Sincere" => "Honest",
+        "Vibes" => "Signals"
+    );
 </body>
 </html>
