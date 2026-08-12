@@ -50,7 +50,7 @@
     }
     else
     {
-        echo "Word Not found";
+        echo "$search Word's Meaning Not found";
     }
     ?>
 </body>
